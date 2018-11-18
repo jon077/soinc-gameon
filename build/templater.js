@@ -51,22 +51,16 @@ function parseDocuments() {
         ++i;
     });
 
-    for (const assignment of assignments) {
-        if (!assignment.PDF && !assignment.ZIP) {
-            assignment.noFiles = true;
-        }
-    }
-
-    const lecturesNew = yaml.safeLoad(fs.readFileSync(path.resolve(__dirname, '../data/lectures-new.yml')));
+    const tutorialsNew = yaml.safeLoad(fs.readFileSync(path.resolve(__dirname, '../data/tutorials-new.yml')));
 
     // Normalize the data
-    for (const lecture of lecturesNew) {
-        ensureArrayExists(lecture, NOTES);
-        ensureArrayExists(lecture, REFERENCES);
+    for (const tutorial of tutorialsNew) {
+        ensureArrayExists(tutorial, NOTES);
+        ensureArrayExists(tutorial, REFERENCES);
     }
 
 
-    return { lecturesNew, assignmentsFrontmatter, assignments };
+    return { tutorialsNew, assignmentsFrontmatter, assignments };
 }
 
 function registerPartials(handlebars) {
@@ -95,7 +89,7 @@ function registerHelpers(handlebars) {
 
         return new handlebars.SafeString('<a href="' + v[key] + '">' + key + '</a>');
     });
-    handlebars.registerHelper('lectureSlug', l => 'lecture-' + toSlug(l.Title));
+    handlebars.registerHelper('tutorialSlug', l => 'tutorial-' + toSlug(l.Title));
     handlebars.registerHelper('assignmentSlug', l => 'assignment-' + toSlug(l.Label));
 }
 

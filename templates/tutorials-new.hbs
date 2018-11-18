@@ -1,0 +1,29 @@
+{{#each this}}
+<section class="module" id="{{tutorialSlug this}}">
+    <table>
+        <tr>
+            <td class="label" colspan="2">
+                <h1><a href="#{{tutorialSlug this}}">{{Title}}</a></h1>
+                {{{Summary}}}
+            </td>
+            <td colspan="2">
+                <iframe width="560" height="315" src="{{Video}}" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td class="references">
+                <h1>References</h1>
+                {{#if References}}
+                <ul>
+                    {{#each References}}
+                        <li>{{maybeLink this}}</li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                  (None)
+                {{/if}}
+            </td>
+    </tr>
+</table>
+</section>
+{{/each}}
