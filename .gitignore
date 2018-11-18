@@ -3,8 +3,8 @@ package-lock.json
 node_modules
 
 # Misc
-/styles
-/index.html
+styles
+index.html
 videos
 
 # Build site
