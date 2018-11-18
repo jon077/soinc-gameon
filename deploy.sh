@@ -27,7 +27,7 @@ cd ..
 rm -rf out/**/* || exit 0
 
 # Clean out .gitignore
-rm .gitignore
+rm out/.gitignore
 
 # Run our compile script
 doCompile
