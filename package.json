@@ -1,5 +1,5 @@
 {
-  "name": "bloombergFOML",
+  "name": "soinc-gameon",
   "private": true,
   "scripts": {
     "build-in-place": "npm run template && npm run stylus",
