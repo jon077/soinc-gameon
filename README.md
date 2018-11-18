@@ -1,4 +1,4 @@
-#  Foundations of Machine Learning
+#  Science Olympiad:  Game On
 
 ## Editing, rebuilding, and deploying this page
 
