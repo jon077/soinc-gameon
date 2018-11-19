@@ -1,6 +1,6 @@
 -
   Title: "1. Introduction and Help/Instructions"
-  Video: "https://www.youtube.com/embed/m9TrzYxEyW0"
+  Video: "https://www.youtube.com/embed/lApqg9uyAik"
   Summary: "<p>Learn how to create a sprite, an intro screen and help menu covering the rubric requirements.   Stages, backdrops and sprites are covered.  Simple vector based drawing is also introduced.</p>"
   References:
     - { "Mouse Over" : "https://en.scratch-wiki.info/wiki/Mouse-Over"}
@@ -9,7 +9,7 @@
     - { "Show (block)" : "https://en.scratch-wiki.info/wiki/Show_(block)" }
 -
   Title: "2. User Controlled (UC) Sprite"
-  Video: "https://www.youtube.com/embed/FXOR9JPmBC4"
+  Video: "https://www.youtube.com/embed/LnW2lgr7-gY"
   Summary: "<p>We have an interactive discussion about how to reformulate a real and subtly complicated business problem as a formal machine learning problem.  The real goal isn't so much to solve the problem, as to convey the point that properly mapping your business problem to a machine learning problem is both extremely important and often quite challenging.  This course doesn't dwell on how to do this mapping, though see Provost and Fawcett's book in the references.</p>"
   References:
     - { "Movement" : "https://en.scratch-wiki.info/wiki/Movement"}
