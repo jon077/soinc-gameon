@@ -6,7 +6,6 @@ set -e # exit with nonzero exit code if anything fails
 # clear and re-create the out directory
 rm -f index.html
 rm -rf styles/*.css
-rm .gitignore
 
 npm run build-in-place
 
